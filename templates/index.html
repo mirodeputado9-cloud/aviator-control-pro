@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aviator Control Pro</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Aviator Control Pro</h1>
+<p><strong>Ferramenta educativa • Não prevê resultados • Uso sob responsabilidade do utilizador</strong></p>
+
+<form method="post">
+    <input type="number" step="0.01" name="valor" placeholder="Multiplicador" required>
+    <button type="submit">Adicionar</button>
+</form>
+
+<h3>Estatísticas</h3>
+<p>Total: {{ stats.total }}</p>
+<p>Baixas: {{ stats.baixas }}</p>
+<p>Médias: {{ stats.medias }}</p>
+<p>Altas: {{ stats.altas }}</p>
+
+<h3>Banca</h3>
+<p>Banca Atual: {{ banca.banca_atual }}</p>
+<p>Aposta Sugerida: {{ banca.aposta_sugerida }}</p>
+
+</body>
+</html>
